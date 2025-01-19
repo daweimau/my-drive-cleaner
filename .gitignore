@@ -1,0 +1,8 @@
+.DS_STORE
+credentials.json
+token*.json
+node_modules
+output/*
+downloads/*
+!output/.keep
+!downloads/.keep
