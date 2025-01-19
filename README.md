@@ -22,8 +22,19 @@ This leaves you to:
 
 ## Usage
 
-`npm install`
-`npm start`
+1. Save [API credentials](https://console.cloud.google.com/apis/credentials) from Google Cloud Console in this directory, as `credentials.json`
+
+2. The GCP project must have [Photos Library API](https://console.cloud.google.com/apis/api/photoslibrary.googleapis.com) access enabled. Note this is API mostly deprecated in March 2025. The new API won't have any way to help with this use case.
+
+3. In this project root, run:
+
+   `npm install`
+
+   `npm start`
+
+4. You'll need to approve each account access, and copy back the 'token' from the browser callback URLs after each approval.
+
+Think carefully about which account should be the 'master'. For me, it's the one where I'm already paying for more storage (Google One, or whatever it's called.)
 
 ## Decisions
 
